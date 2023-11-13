@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <button id="btn1">start</button>
+    <button id="btn2">reset</button>
+    <button id="btn3">stop</button>
+    <div class="timer">0</div>
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <script>
+        // const timeId= setInterval(() => {
+        //     console.log(btn())
+        // }, 1000);
+ 
+let num =0
+        const timer = document.querySelector("div")
+        btn1.onclick = () => setInterval(() => {
+       num++
+            timer.innerHTML=num
+        }, 1000);
+
+        const btn2=document.querySelector("#btn2")
+        btn2.addEventListener("click",function () {
+            clearInterval(btn1)
+            
+        })
+    </script>
+
+    
+
+
+</body>
+
+</html>
